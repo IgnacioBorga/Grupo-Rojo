@@ -103,3 +103,13 @@ Va a ser un boton en el nav, al tocarlo va a abrir un formulario solicitando:
 -   fecha_hora_creacion:
 -   groups:
 -   events:
+
+---
+
+---
+
+## Wireframe:
+
+Se deja el link para el wireframe de la aplicacion, donde tambien se encuentran comentarios del funcionamiento.
+
+[Wireframe](https://wireframe.cc/pro/pp/c1fd42edd567483 "Proyecto")
