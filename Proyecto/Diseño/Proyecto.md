@@ -1,4 +1,4 @@
-# Proyecto miracle team rojo
+# Proyecto MiracleLab Team Rojo
 
 ## Resumen
 
@@ -39,7 +39,13 @@ El proyecto se basa en una agenda que coordine los tiempos de ocio de un grupo d
 
     -   Solo se muestran invitaciones a votaciones activas.
 
+![Imagen calendario](imagenes\Calendario.png)
+
 ---
+
+## ![Imagen calendario](imagenes\InformacionEvento.png)
+
+## <div style="page-break-after: always;"></div>
 
 ---
 
@@ -58,7 +64,9 @@ Este evento quedara guardado teniendo en cuenta la fecha de creacion del mismo. 
 
 De no haber coincidencia se informa al creador del evento con un msj de error.
 
----
+![Imagen calendario](imagenes\FormularioCreacionEvento.png)
+
+## <div style="page-break-after: always;"></div>
 
 ---
 
@@ -83,7 +91,9 @@ De no haber coincidencia se informa al creador del evento con un msj de error.
 
 Se cierra la votacion cuando todos los participantes votaron, o cuando se llega a la fecha limite (queda definir que pasa en este ultimo paso).
 
----
+![Imagen calendario](imagenes\FormularioVotacionEvento.png)
+
+## <div style="page-break-after: always;"></div>
 
 ---
 
