@@ -10,7 +10,7 @@ El proyecto se basa en un gestor de eventos sociales:
 
 -   ~~Luego, mediante una base de datos de agendas personales de los participantes, se generan 3 opciones (max) para la realizacion del evento (dia y hora).~~
 
--   En el formulario de creacion, el usuario debe ingresar una descripcion del evento, invitados y como maximo 3 fechas tentativas de realizacion de dicho evento. Tambien debe ingresarse una fecha limite para el fin de la votacion.
+-   En el formulario de creacion, el usuario debe ingresar una descripcion del evento, invitados y como maximo 3 fechas tentativas de realizacion de dicho evento. Tambien debe ingresarse una fecha limite para determinar el fin de la votacion.
 
 -   La invitacion se realiza de dos formas: por invitacion a una lista de "amigos" dentro de la misma aplicacion, o por medio de un enlace generado exclusivamente para el evento (lo genera la aplicacion al crear el evento. De esta manera se puede invitar a un usuario que todavia no este registrado en la aplicacion. Antes de participar del evento, el usuario debe loguearse o registrarse.)
 
@@ -22,7 +22,7 @@ El proyecto se basa en un gestor de eventos sociales:
 
 ### Se someteria a votacion una vez enviada la notificacion lo siguiente
 
-> Fecha y hora (puede aceptar mas de una opcion)
+> Fecha y hora
 
 > Lugar para realizar la actividad
 
@@ -77,7 +77,7 @@ Cada usuario puede generar un evento llenando un formulario
 
 Este evento quedara guardado teniendo en cuenta la fecha de creacion del mismo. Generara el evento en base a la votacion. La votacion finaliza el dia especificado en el formulario. Dispara una notificacion con los datos del mismo a todos los integrantes, por medio de un email.
 
-De haber empate en la votacion, se tomara el dia mas proximo a la fecha actual.
+De haber empate en la votacion, se tomara la opcion con mas votantes y mas proxima a la fecha actual.
 
 ![Imagen calendario](imagenes\FormularioCreacionEvento.png)
 
