@@ -52,7 +52,7 @@ El proyecto se basa en un gestor de eventos sociales:
 
     -   Solo se muestran invitaciones a votaciones activas.
 
-![Imagen calendario](imagenes\Calendario.png)
+![Imagen calendario](imagenes\CalendarioModificado.png)
 
 ---
 
@@ -64,18 +64,20 @@ El proyecto se basa en un gestor de eventos sociales:
 
 ## Formulario de creacion del evento
 
-Cada uno de los integrantes puede proponer un evento llenando un formulario
+Cada usuario puede generar un evento llenando un formulario
 
 -   Nombre del evento.
 -   Descripcion.
 -   Ubicacion.
--   Preferencia de estado del tiempo? (trabajar con api de clima para determinar el pronostico)
--   Fecha limite. (Si no se encuentra una coincidencia previamente a esta fecha el sistema lo elimina)
--   Invitados? (se puede trabajar con un enlace para no tener que ingresar manualmente los invitados, sino un numero de votantes.)
+-   ~~Preferencia de estado del tiempo? (trabajar con api de clima para determinar el pronostico)~~
+-   Fecha limite. (La votacion se dara por finalizada en dicha fecha)
+-   La invitacion se realiza de dos formas:
+    -   Por invitacion a una lista de "amigos" dentro de la misma aplicacion.
+    -   Por medio de un enlace generado exclusivamente para el evento (lo genera la aplicacion al crear el evento. De esta manera se puede invitar a un usuario que todavia no este registrado en la aplicacion. Antes de participar del evento, el usuario debe loguearse o registrarse.)
 
-Este evento quedara guardado teniendo en cuenta la fecha de creacion del mismo. El sistema al encontrar una fecha y hora libre coincidente entre los integrantes del grupo, y que no supere la fecha limite, genera el evento y procede a la votacion. Dispara una notificacion con los datos del mismo a todos los integrantes.
+Este evento quedara guardado teniendo en cuenta la fecha de creacion del mismo. Generara el evento en base a la votacion. La votacion finaliza el dia especificado en el formulario. Dispara una notificacion con los datos del mismo a todos los integrantes, por medio de un email.
 
-De no haber coincidencia se informa al creador del evento con un msj de error.
+De haber empate en la votacion, se tomara el dia mas proximo a la fecha actual.
 
 ![Imagen calendario](imagenes\FormularioCreacionEvento.png)
 
@@ -98,11 +100,9 @@ Opciones:
 -   Ubicacion (Opcional, puede ser definido por el admin al crear el evento.)
 -   Lista de participantes.
 
-Este evento quedara guardado teniendo en cuenta la fecha de creacion del mismo. El sistema al encontrar una fecha y hora libre coincidente entre los integrantes del grupo, y que no supere la fecha limite, genera el evento y procede a la votacion. Dispara una notificacion con los datos del mismo a todos los integrantes.
+Puede incluirse un minimo de participaciones o votos positivos para realizar el evento.
 
-De no haber coincidencia se informa al creador del evento con un msj de error.
-
-Se cierra la votacion cuando todos los participantes votaron, o cuando se llega a la fecha limite (queda definir que pasa en este ultimo paso).
+Se cierra la votacion cuando se llega a la fecha limite.
 
 ![Imagen calendario](imagenes\FormularioVotacionEvento.png)
 
@@ -115,17 +115,17 @@ Se cierra la votacion cuando todos los participantes votaron, o cuando se llega 
 Va a ser un boton en el nav, al tocarlo va a abrir un formulario solicitando:
 
 -   Nombre
--   apellido
--   mail
+-   Apellido
+-   Email
 -   Nombre de usuario
 -   Contraseña
 
-> A nivel de base de datos tambien se contaran con los siguientes datos:
+> A nivel de base de datos se cuenta con los siguientes datos:
 
 -   id_usuario:
 -   fecha_hora_creacion:
--   groups:
--   events:
+-   listaAmigos:
+-   eventos:
 
 ---
 
@@ -133,6 +133,8 @@ Va a ser un boton en el nav, al tocarlo va a abrir un formulario solicitando:
 
 ## Wireframe:
 
-Se deja el link para el wireframe de la aplicacion, donde tambien se encuentran comentarios del funcionamiento.
+~~Se deja el link para el wireframe de la aplicacion, donde tambien se encuentran comentarios del funcionamiento.~~
 
-[Wireframe](https://wireframe.cc/pro/pp/c1fd42edd567483 "Proyecto")
+Wireframe desactualizado
+
+~~[Wireframe](https://wireframe.cc/pro/pp/c1fd42edd567483 "Proyecto")~~
