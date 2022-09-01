@@ -1,0 +1,32 @@
+/* Form */
+
+.todo-form {
+    display: flex;
+    justify-content: space-between;
+    min-height: 6rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.todo-input {
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    border: 0.2rem solid forestgreen;
+}
+
+.todo-button {
+    height: auto;
+    min-width: 15rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid forestgreen;
+    background-color: forestgreen;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+    text-transform: capitalize;
+}

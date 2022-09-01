@@ -1,0 +1,70 @@
+/* We use box-sizing from Paul Irish, & the 62,5% px conversion for REM */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 62.5% of the base size of 16px = 10px.*/
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #1b1b32;
+    font-family: Lato, sans-serif;
+    color: white;
+}
+
+h1 {
+    color: #1b1b32;
+    font-size: 3.2rem;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Main CSS*/
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+
+.logo-container {
+    width: 100%;
+    margin: 2rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* To Do list */
+
+.todo-main {
+    width: 60rem;
+    min-height: 50rem;
+    background-color: #d0d0d5;
+    padding: 2.5rem;
+    margin: 1rem;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
