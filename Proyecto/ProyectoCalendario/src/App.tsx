@@ -1,7 +1,7 @@
 import './styles/App.css';
-import Logo from './components/logo';
+import Logo from './components/Logo';
 import './styles/Normalize.css';
-import TodoList from './components/TodoList';
+import EventList from './components/EventList';
 
 function App() {
 
@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <Logo/>
       <div className="todo-main">
-        <h1 className="tittle">Mis Tareas</h1>
+        <h1 className="tittle">Crear nuevo evento</h1>
 
-        <TodoList />
+        <EventList />
       </div>
     </div>
   );

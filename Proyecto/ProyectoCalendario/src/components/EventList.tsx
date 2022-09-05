@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import TodoForm from "./form";
-import ToDo from "./toDo";
+import Form from "./EventCreationForm";
+import ToDo from "./EventElement";
 
 /**
  * Creates, eliminates and mark as finshed the tasks.
@@ -8,13 +8,14 @@ import ToDo from "./toDo";
  * @returns 
  */
 function TodoList(){
-    type taskTipe = {id:string, text:string, completed:boolean};
+    type taskTipe = {id:string, title:string, date: Date, text:string, completed:boolean};
 
     const [list, setList] = useState<taskTipe[]>([]);
 
     const addTask = (task: taskTipe) => {
-        if (task.text.trim()){
+        if (task.title.trim()){
             task.text = task.text.trim();
+            task.title = task.title.trim();
             const updatedList = [ task, ...list]
             setList(updatedList)
             
@@ -39,7 +40,7 @@ function TodoList(){
 
     return(
         <>
-            <TodoForm 
+            <Form 
             onSubmit = {addTask} />
             <div className="todo-list-container">
                 {
@@ -47,6 +48,8 @@ function TodoList(){
                         <ToDo 
                             key= {task.id}
                             id = {task.id}
+                            title = {task.title}
+                            date = {task.date}
                             text = {task.text}
                             completed = {task.completed}
                             deleteTask = {deleteTask}
